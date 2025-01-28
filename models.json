@@ -1,0 +1,17 @@
+{
+	"host": "localhost",
+	"port": "8080",
+
+	"models": [
+		{
+			"chat_format": "chatml",
+			"model": "models/phi-4.gguf",
+			"model_alias": "phi-4"
+		},
+		{
+			"chat_format": "chatml",
+			"model": "models/rwkv-6.gguf",
+			"model_alias": "rwkv-6"
+		}
+	]
+}
