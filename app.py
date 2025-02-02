@@ -66,9 +66,23 @@ async def on_chat_start() -> None:
 
     # Setup initial state
     cl.user_session.set("client", None)
+#   cl.user_session.set("target-data", None)
     cl.user_session.set("dialogue",
                         [{"role": "system",
                           "content": "You are an AI assistant."}])
+
+    """
+    files = None
+    while files is None:
+        files = await cl.AskFileMessage(
+            content="Drop a file you want to analyze",
+            accept=["text/csv"]
+        ).send()
+
+    with open(files[0], "r") as f:
+        content: str = f.readall()
+        cl.user_session.set("target-data", content)
+    #"""
 
 
 @cl.on_settings_update

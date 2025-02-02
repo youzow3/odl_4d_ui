@@ -5,8 +5,9 @@
 	"models": [
 		{
 			"chat_format": "chatml",
-			"model": "models/phi-4.gguf",
-			"model_alias": "phi-4"
+			"model": "models/phi-4-IQ4_NL.gguf",
+			"model_alias": "phi-4-IQ4_NL",
+			"n_ctx": "8192"
 		},
 		{
 			"chat_format": "chatml",
